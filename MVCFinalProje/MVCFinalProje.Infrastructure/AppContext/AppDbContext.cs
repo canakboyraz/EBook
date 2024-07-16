@@ -20,6 +20,8 @@ namespace MVCFinalProje.Infrastructure.AppContext
 
         public virtual DbSet<Author> Authors { get; set; }
         public virtual DbSet<Admin> Admins { get; set; }  
+
+        public virtual DbSet<Publisher> Publishers { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(typeof(IEntityConfigurations).Assembly);

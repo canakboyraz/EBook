@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AspNetCoreHero.ToastNotification;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -18,6 +19,14 @@ namespace MVCFinalProje.Infrastructure.Extentions
     {
         public static IServiceCollection AddUIServices(this IServiceCollection services)
         {
+            services.AddNotyf(config =>
+            {
+                config.HasRippleEffect = true;
+                config.DurationInSeconds = 3;
+                config.Position = NotyfPosition.BottomRight;
+                config.IsDismissable = true;
+            });
+
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>();
 

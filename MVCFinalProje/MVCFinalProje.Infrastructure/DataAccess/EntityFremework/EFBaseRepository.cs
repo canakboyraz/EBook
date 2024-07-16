@@ -21,7 +21,7 @@ namespace MVCFinalProje.Infrastructure.DataAccess.EntityFremework
         public EFBaseRepository(DbContext context)
         {
             _context = context;
-            _table = context.Set<TEntity>();
+            _table = _context.Set<TEntity>();
         }
 
         public async Task<TEntity> AddAsync(TEntity entity)

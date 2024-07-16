@@ -212,6 +212,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNetCoreHero.ToastNotification": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Mapster": {
               "target": "Package",
               "version": "[7.4.0, )"

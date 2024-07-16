@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MVCFinalProje.Business.DTOs.AuthorDTOs;
 using MVCFinalProje.Business.Services.AuthorServices;
+using MVCFinalProje.UI.Areas.Admin.Models.AuthorVM;
 using MVCFinalProje.UI.Models.AuthorVM;
 
 namespace MVCFinalProje.UI.Areas.Admin.Controllers
@@ -20,11 +21,12 @@ namespace MVCFinalProje.UI.Areas.Admin.Controllers
             var result = await _authorService.GetAllAsync();
             if (!result.IsSuccess)
             {
-                await Console.Out.WriteLineAsync(result.Message);
-                return View(result.Data.Adapt<List<AuthorListVM>>());
+                ErrorNotyf(result.Message);
+                //await Console.Out.WriteLineAsync(result.Message);
+                return View(result.Data.Adapt<List<AdminAuthorListVM>>());
             }
-            await Console.Out.WriteLineAsync(result.Message);
-            return View(result.Data.Adapt<List<AuthorListVM>>());
+            SuccesNotyf(result.Message);
+            return View(result.Data.Adapt<List<AdminAuthorListVM>>());
         }
 
         public async Task<IActionResult> Create()
@@ -33,7 +35,7 @@ namespace MVCFinalProje.UI.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(AuthorCreateVM model)
+        public async Task<IActionResult> Create(AdminAuthorCreateVM model)
         {
             if (!ModelState.IsValid)
             {
@@ -42,13 +44,14 @@ namespace MVCFinalProje.UI.Areas.Admin.Controllers
 
             var authorCreateDTO = model.Adapt<AuthorCreateDTO>();
             var result = await _authorService.AddAsync(authorCreateDTO);
+
             if (!result.IsSuccess)
             {
-                await Console.Out.WriteLineAsync(result.Message);
+                ErrorNotyf(result.Message);
                 return View(model);
             }
 
-            await Console.Out.WriteLineAsync(result.Message);
+            SuccesNotyf(result.Message);
             return RedirectToAction("Index");
         }
 
@@ -59,10 +62,10 @@ namespace MVCFinalProje.UI.Areas.Admin.Controllers
             var result = await _authorService.DeleteByAsync(id);
             if (!result.IsSuccess)
             {
-                await Console.Out.WriteLineAsync(result.Message);
+                ErrorNotyf(result.Message);
                 return RedirectToAction("Index");
             }
-            await Console.Out.WriteLineAsync(result.Message);
+            SuccesNotyf(result.Message);
             return RedirectToAction("Index");
         }
 
@@ -71,16 +74,16 @@ namespace MVCFinalProje.UI.Areas.Admin.Controllers
             var result = await _authorService.GetByIdAsync(id);
             if (!result.IsSuccess)
             {
-                await Console.Out.WriteLineAsync(result.Message);
+                ErrorNotyf(result.Message);
                 return RedirectToAction("Index");
             }
-
-            return View(result.Data.Adapt<AuthorUpdateVM>());
+            SuccesNotyf(result.Message);
+            return View(result.Data.Adapt<AdminAuthorUpdateVM>());
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> Edit(AuthorUpdateVM model)
+        public async Task<IActionResult> Edit(AdminAuthorUpdateVM model)
         {
             if (!ModelState.IsValid)
             {
@@ -90,10 +93,10 @@ namespace MVCFinalProje.UI.Areas.Admin.Controllers
             var result = await _authorService.UpdateByAsync(model.Adapt<AuthorUpdateDTOs>());
             if (!result.IsSuccess)
             {
-                await Console.Out.WriteLineAsync(result.Message);
+                ErrorNotyf(result.Message);
                 return View(model);
             }
-            await Console.Out.WriteLineAsync(result.Message);
+            SuccesNotyf(result.Message);
             return RedirectToAction("Index");
         }
     }

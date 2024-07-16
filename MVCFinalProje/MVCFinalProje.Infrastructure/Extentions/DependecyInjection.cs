@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MVCFinalProje.Infrastructure.AppContext;
 using MVCFinalProje.Infrastructure.Repositories.AuthorRepository;
+using MVCFinalProje.Infrastructure.Repositories.PublisherRepository;
 using MVCFinalProje.Infrastructure.Seeds;
 using System;
 using System.Collections.Generic;
@@ -22,11 +23,12 @@ namespace MVCFinalProje.Infrastructure.Extentions
                 options.UseSqlServer(configuration.GetConnectionString("AppConnectionString"));
             });
             services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IPublisherRepository, PublisherRepository>();
 
 
             // Seed Data ( genelde mig işlemlerinde yprum satırına almamız gerekebilir. )
 
-            AdminSeed.SeedAsync(configuration).GetAwaiter().GetResult();
+            // AdminSeed.SeedAsync(configuration).GetAwaiter().GetResult();
 
 
 
