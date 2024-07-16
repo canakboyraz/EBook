@@ -8167,11 +8167,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje.UI\\MVCFinalProje.UI.csproj",
+      "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.UI\\MVCFinalProje.UI.csproj",
       "projectName": "MVCFinalProje.UI",
-      "projectPath": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje.UI\\MVCFinalProje.UI.csproj",
+      "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.UI\\MVCFinalProje.UI.csproj",
       "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje.UI\\obj\\",
+      "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8189,8 +8189,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\Business\\MVCFinalProje.Business.csproj": {
-              "projectPath": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\Business\\MVCFinalProje.Business.csproj"
+            "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\Business\\MVCFinalProje.Business.csproj": {
+              "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\Business\\MVCFinalProje.Business.csproj"
             }
           }
         }

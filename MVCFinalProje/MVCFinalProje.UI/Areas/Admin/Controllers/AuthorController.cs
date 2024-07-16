@@ -4,9 +4,9 @@ using MVCFinalProje.Business.DTOs.AuthorDTOs;
 using MVCFinalProje.Business.Services.AuthorServices;
 using MVCFinalProje.UI.Models.AuthorVM;
 
-namespace MVCFinalProje.UI.Controllers
+namespace MVCFinalProje.UI.Areas.Admin.Controllers
 {
-    public class AuthorController : Controller
+    public class AuthorController : AdminBaseController
     {
         private readonly IAuthorService _authorService;
 
@@ -40,7 +40,7 @@ namespace MVCFinalProje.UI.Controllers
                 return View(model);
             }
 
-            var authorCreateDTO =  model.Adapt<AuthorCreateDTO>();
+            var authorCreateDTO = model.Adapt<AuthorCreateDTO>();
             var result = await _authorService.AddAsync(authorCreateDTO);
             if (!result.IsSuccess)
             {
@@ -96,7 +96,5 @@ namespace MVCFinalProje.UI.Controllers
             await Console.Out.WriteLineAsync(result.Message);
             return RedirectToAction("Index");
         }
-
-
     }
 }

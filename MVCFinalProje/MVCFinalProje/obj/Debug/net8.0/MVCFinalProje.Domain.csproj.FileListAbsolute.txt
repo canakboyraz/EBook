@@ -22,3 +22,16 @@ C:\Users\huawei\Desktop\BA\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinal
 C:\Users\huawei\Desktop\BA\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\refint\MVCFinalProje.Domain.dll
 C:\Users\huawei\Desktop\BA\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.pdb
 C:\Users\huawei\Desktop\BA\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\ref\MVCFinalProje.Domain.dll
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\bin\Debug\net8.0\MVCFinalProje.Domain.deps.json
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\bin\Debug\net8.0\MVCFinalProje.Domain.dll
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\bin\Debug\net8.0\MVCFinalProje.Domain.pdb
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.csproj.AssemblyReference.cache
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.AssemblyInfoInputs.cache
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.AssemblyInfo.cs
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.csproj.CoreCompileInputs.cache
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.sourcelink.json
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.dll
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\refint\MVCFinalProje.Domain.dll
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\MVCFinalProje.Domain.pdb
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje\obj\Debug\net8.0\ref\MVCFinalProje.Domain.dll

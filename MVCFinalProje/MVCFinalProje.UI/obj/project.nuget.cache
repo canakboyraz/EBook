@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqu/f0LPe/8=",
+  "dgSpecHash": "4a4jOSVWZOk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje.UI\\MVCFinalProje.UI.csproj",
+  "projectFilePath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.UI\\MVCFinalProje.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huawei\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\huawei\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

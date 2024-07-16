@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2icGS15mN5Q=",
+  "dgSpecHash": "xLMGGHJz8CE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje\\MVCFinalProje.Domain.csproj",
+  "projectFilePath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje\\MVCFinalProje.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huawei\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "C:\\Users\\huawei\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",

@@ -566,11 +566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje\\MVCFinalProje.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje\\MVCFinalProje.Domain.csproj",
       "projectName": "MVCFinalProje.Domain",
-      "projectPath": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje\\MVCFinalProje.Domain.csproj",
+      "projectPath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje\\MVCFinalProje.Domain.csproj",
       "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huawei\\Desktop\\BA\\MVCFinalProje\\MVCFinalProje\\obj\\",
+      "outputPath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
