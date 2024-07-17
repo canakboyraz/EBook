@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MVCFinalProje.Domain.Entities;
+using MVCFinalProje.Infrastructure.AppContext;
 using MVCFinalProje.Infrastructure.DataAccess.EntityFremework;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace MVCFinalProje.Infrastructure.Repositories.PublisherRepository
 {
     public class PublisherRepository : EFBaseRepository<Publisher>, IPublisherRepository
     {
-        public PublisherRepository(DbContext context) : base(context)
+        public PublisherRepository(AppDbContext context) : base(context)
         {
         }
     }

@@ -803,3 +803,6 @@ C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje.UI\obj\Debug\
 C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje.UI\obj\Debug\net8.0\MVCFinalProje.UI.pdb
 C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje.UI\obj\Debug\net8.0\MVCFinalProje.UI.genruntimeconfig.cache
 C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje.UI\obj\Debug\net8.0\ref\MVCFinalProje.UI.dll
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje.UI\bin\Debug\net8.0\AspNetCoreHero.ToastNotification.Views.dll
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje.UI\bin\Debug\net8.0\AspNetCoreHero.ToastNotification.dll
+C:\Users\huawei\Documents\GitHub\EBook\MVCFinalProje\MVCFinalProje.UI\obj\Debug\net8.0\MVCFinalProje.UI.MvcApplicationPartsAssemblyInfo.cs

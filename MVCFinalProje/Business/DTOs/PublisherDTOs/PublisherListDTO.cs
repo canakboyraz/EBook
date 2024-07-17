@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MVCFinalProje.Business.DTOs.PublisherDTOs
 {
-    internal class PublisherListDTO
+    public class PublisherListDTO
     {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
     }
 }
