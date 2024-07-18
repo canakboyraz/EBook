@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MVCFinalProje.Infrastructure.AppContext;
 using MVCFinalProje.Infrastructure.Repositories.AuthorRepository;
+using MVCFinalProje.Infrastructure.Repositories.BookRepository;
 using MVCFinalProje.Infrastructure.Repositories.PublisherRepository;
 using MVCFinalProje.Infrastructure.Seeds;
 using System;
@@ -24,6 +25,7 @@ namespace MVCFinalProje.Infrastructure.Extentions
             });
             services.AddScoped<IAuthorRepository, AuthorRepository>();
             services.AddScoped<IPublisherRepository, PublisherRepository>();
+            services.AddScoped<IBookRepository, BookRepository>();
 
 
             // Seed Data ( genelde mig işlemlerinde yprum satırına almamız gerekebilir. )

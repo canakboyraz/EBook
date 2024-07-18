@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using MVCFinalProje.Business.Services.AuthorServices;
+using MVCFinalProje.Business.Services.BookServices;
 using MVCFinalProje.Business.Services.PublisherServices;
+using MVCFinalProje.Infrastructure.Repositories.BookRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,7 @@ namespace MVCFinalProje.Business.Extentions
         {
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IPublisherService, PublisherService>();
+            services.AddScoped<IBookService, BookService>();
             return services;
         }
     }

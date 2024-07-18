@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace MVCFinalProje.Infrastructure.Repositories.AuthorRepository
 {
-    internal class AuthorRepository : EFBaseRepository<Author>, IAuthorRepository
+    public class AuthorRepository : EFBaseRepository<Author>, IAuthorRepository
     {
         public AuthorRepository(AppDbContext context) : base(context)
         {
