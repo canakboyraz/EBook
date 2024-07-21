@@ -66,8 +66,9 @@ namespace MVCFinalProje.Business.Services.PublisherServices
         }
 
         public async Task<IDataResult<List<PublisherListDTO>>> GetAllAsync()
+
         {
-            var publishers = await _publisherRepository.GetAllAsync();
+            var publishers = await _publisherRepository.GetAllAsync(x=>x.CreatedDate,false); // oluşturma tarihine göre son oluşan en sona eklenecek.
             var publisherListDTOs = publishers.Adapt<List<PublisherListDTO>>();
             if (publishers.Count() <= 0)
             {

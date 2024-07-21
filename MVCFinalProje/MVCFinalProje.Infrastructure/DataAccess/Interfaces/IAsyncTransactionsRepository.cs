@@ -1,0 +1,16 @@
+﻿using Microsoft.EntityFrameworkCore.Storage;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MVCFinalProje.Infrastructure.DataAccess.Interfaces
+{
+    public interface IAsyncTransactionsRepository
+    {
+        Task<IDbContextTransaction> BeginTransaction(IDbContextTransaction transaction);
+
+        // Eksik
+    }
+}

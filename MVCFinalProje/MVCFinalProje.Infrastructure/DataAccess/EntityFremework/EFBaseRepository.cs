@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
+using Microsoft.EntityFrameworkCore.Storage;
 using MVCFinalProje.Core.BaseEntities;
 using MVCFinalProje.Core.Interfaces;
 using MVCFinalProje.Enums;
@@ -13,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace MVCFinalProje.Infrastructure.DataAccess.EntityFremework
 {
-    public class EFBaseRepository<TEntity> : IRepository,IAsyncRepository,IAsyncInsertable<TEntity> , IAsyncUpdatebleRepository<TEntity> , IAsyncDeletableRepository<TEntity>, IAsyncFindable<TEntity> , IAsyncOrderableRepository<TEntity> , IAsyncQueryableRepository<TEntity>  where TEntity : BaseEntity
+    public class EFBaseRepository<TEntity> : IRepository,IAsyncRepository,IAsyncInsertable<TEntity> , IAsyncUpdatebleRepository<TEntity> , IAsyncDeletableRepository<TEntity>, IAsyncFindable<TEntity> , IAsyncOrderableRepository<TEntity> , IAsyncQueryableRepository<TEntity> , IAsyncTransactionsRepository  where TEntity : BaseEntity
     {
         protected readonly DbContext _context; // protected kalıtım verdiğim yerlerde kullanabilir.
         protected readonly DbSet<TEntity> _table;
@@ -38,6 +39,11 @@ namespace MVCFinalProje.Infrastructure.DataAccess.EntityFremework
         public async Task<bool> AnyAsync(Expression<Func<TEntity, bool>> exception = null)
         {
             return  exception is null ? await GetAllActives().AnyAsync() : await GetAllActives().AnyAsync(exception); // eğer bir koşul varsa koşula göre sorgula -- Eğer yoksa tabloda herhangi bir true false varmı yok mu ona göre dön.
+        }
+
+        public async Task<IDbContextTransaction> BeginTransaction(IDbContextTransaction transaction)
+        {
+            return await _context.Database.BeginTransaction(transaction); // Eksik
         }
 
         public async Task DeleteAsync(TEntity entity)

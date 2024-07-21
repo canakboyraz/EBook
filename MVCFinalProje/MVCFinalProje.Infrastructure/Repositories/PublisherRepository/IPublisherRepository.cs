@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MVCFinalProje.Infrastructure.Repositories.PublisherRepository
 {
-    public interface IPublisherRepository : IAsyncRepository, IAsyncFindable<Publisher>, IAsyncInsertable<Publisher>, IAsyncQueryableRepository<Publisher>, IAsyncDeletableRepository<Publisher>, IAsyncUpdatebleRepository<Publisher>
+    public interface IPublisherRepository : IAsyncRepository, IAsyncFindable<Publisher>, IAsyncInsertable<Publisher>, IAsyncQueryableRepository<Publisher>, IAsyncDeletableRepository<Publisher>, IAsyncUpdatebleRepository<Publisher>,IAsyncOrderableRepository<Publisher>
     {
     }
 }

@@ -107,7 +107,7 @@ namespace MVCFinalProje.UI.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(Guid id)
         {
             var book = await _bookService.GetByIdAsync(id);
-            if (book == null || !book.IsSuccess)
+            if (!book.IsSuccess)
             {
                 ErrorNotyf(book.Message);
                 return RedirectToAction("Index");

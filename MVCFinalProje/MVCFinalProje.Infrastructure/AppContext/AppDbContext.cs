@@ -23,6 +23,7 @@ namespace MVCFinalProje.Infrastructure.AppContext
 
         public virtual DbSet<Publisher> Publishers { get; set; }
         public virtual DbSet<Book> Books { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfigurationsFromAssembly(typeof(IEntityConfigurations).Assembly);
