@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D2302175-7010-4BA0-BC69-01E79B74682F}|MVCFinalProje.UI\\MVCFinalProje.UI.csproj|c:\\users\\huawei\\documents\\github\\ebook\\mvcfinalproje\\mvcfinalproje.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2302175-7010-4BA0-BC69-01E79B74682F}|MVCFinalProje.UI\\MVCFinalProje.UI.csproj|solutionrelative:mvcfinalproje.ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{569DA39B-AEC9-473F-BCC5-91E2872DD688}|MVCFinalProje.Infrastructure\\MVCFinalProje.Infrastructure.csproj|c:\\users\\huawei\\documents\\github\\ebook\\mvcfinalproje\\mvcfinalproje.infrastructure\\dataaccess\\entityfremework\\efbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{569DA39B-AEC9-473F-BCC5-91E2872DD688}|MVCFinalProje.Infrastructure\\MVCFinalProje.Infrastructure.csproj|solutionrelative:mvcfinalproje.infrastructure\\dataaccess\\entityfremework\\efbaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,19 +63,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.UI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MVCFinalProje.UI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.UI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MVCFinalProje.UI\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T12:55:27.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "EFBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.Infrastructure\\DataAccess\\EntityFremework\\EFBaseRepository.cs",
               "RelativeDocumentMoniker": "MVCFinalProje.Infrastructure\\DataAccess\\EntityFremework\\EFBaseRepository.cs",
               "ToolTip": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje.Infrastructure\\DataAccess\\EntityFremework\\EFBaseRepository.cs",
               "RelativeToolTip": "MVCFinalProje.Infrastructure\\DataAccess\\EntityFremework\\EFBaseRepository.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwC0AAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-20T13:46:36.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\MVCFinalProje\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "MVCFinalProje\\Entities\\Customer.cs",
@@ -79,12 +96,11 @@
               "RelativeToolTip": "MVCFinalProje\\Entities\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:27:52.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:27:52.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\Business\\Services\\CustomerServices\\CustomerService.cs",
               "RelativeDocumentMoniker": "Business\\Services\\CustomerServices\\CustomerService.cs",
@@ -92,12 +108,11 @@
               "RelativeToolTip": "Business\\Services\\CustomerServices\\CustomerService.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAIAzwCkAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:26:33.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:26:33.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CustomerCreateDTO.cs",
               "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\Business\\DTOs\\CustomerDTOs\\CustomerCreateDTO.cs",
               "RelativeDocumentMoniker": "Business\\DTOs\\CustomerDTOs\\CustomerCreateDTO.cs",
@@ -105,12 +120,11 @@
               "RelativeToolTip": "Business\\DTOs\\CustomerDTOs\\CustomerCreateDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:26:06.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:26:06.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ICustomerService.cs",
               "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\Business\\Services\\CustomerServices\\ICustomerService.cs",
               "RelativeDocumentMoniker": "Business\\Services\\CustomerServices\\ICustomerService.cs",
@@ -118,12 +132,11 @@
               "RelativeToolTip": "Business\\Services\\CustomerServices\\ICustomerService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:24:58.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:24:58.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\Business\\Services\\AccountServices\\AccountService.cs",
               "RelativeDocumentMoniker": "Business\\Services\\AccountServices\\AccountService.cs",
@@ -131,12 +144,11 @@
               "RelativeToolTip": "Business\\Services\\AccountServices\\AccountService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:21:55.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:21:55.176Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\Users\\huawei\\Documents\\GitHub\\EBook\\MVCFinalProje\\Business\\Services\\AccountServices\\IAccountService.cs",
               "RelativeDocumentMoniker": "Business\\Services\\AccountServices\\IAccountService.cs",
@@ -144,8 +156,7 @@
               "RelativeToolTip": "Business\\Services\\AccountServices\\IAccountService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T13:19:16.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T13:19:16.182Z"
             }
           ]
         }
