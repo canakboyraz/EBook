@@ -9,8 +9,9 @@ namespace MVCFinalProje.Infrastructure.DataAccess.Interfaces
 {
     public interface IAsyncTransactionsRepository
     {
-        Task<IDbContextTransaction> BeginTransaction(IDbContextTransaction transaction);
+        Task<IDbContextTransaction> BeginTransaction(CancellationToken cancellationToken = default);
 
-        // Eksik
+        Task<IExecutionStrategy> CreateExecutionStrategy();
+
     }
 }

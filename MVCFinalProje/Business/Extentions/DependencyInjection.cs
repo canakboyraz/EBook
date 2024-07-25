@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using MVCFinalProje.Business.Services.AccountServices;
 using MVCFinalProje.Business.Services.AuthorServices;
 using MVCFinalProje.Business.Services.BookServices;
+using MVCFinalProje.Business.Services.CustomerServices;
 using MVCFinalProje.Business.Services.PublisherServices;
 using MVCFinalProje.Infrastructure.Repositories.BookRepository;
 using System;
@@ -18,6 +20,8 @@ namespace MVCFinalProje.Business.Extentions
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IPublisherService, PublisherService>();
             services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<ICustomerService, CustomerService>();
             return services;
         }
     }

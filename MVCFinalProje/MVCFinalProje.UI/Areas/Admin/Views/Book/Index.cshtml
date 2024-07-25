@@ -2,57 +2,59 @@
 
 @{
     ViewData["Title"] = "Index";
+    int row = 0;
 }
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PublisDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PublisherId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AuthorId)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-               @item.PublisDate.ToShortDateString()
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PublisherId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AuthorId)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<a class="btn btn-primary" asp-action="Create"> Create </a>
+
+<div class="card-body">
+    <h5 class="card-title">Publisher Create</h5>
+
+    <!-- Table with hoverable rows -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.PublisDate)</th>
+                <th>@Html.DisplayNameFor(model => model.PublisherId)</th>
+                <th>@Html.DisplayNameFor(model => model.AuthorId)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                row++;
+                <tr>
+                    <th scope="row">@row</th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PublisDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PublisherId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AuthorId)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <!-- End Table with hoverable rows -->
+
+

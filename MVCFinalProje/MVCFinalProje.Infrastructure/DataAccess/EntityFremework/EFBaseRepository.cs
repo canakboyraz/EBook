@@ -41,9 +41,14 @@ namespace MVCFinalProje.Infrastructure.DataAccess.EntityFremework
             return  exception is null ? await GetAllActives().AnyAsync() : await GetAllActives().AnyAsync(exception); // eğer bir koşul varsa koşula göre sorgula -- Eğer yoksa tabloda herhangi bir true false varmı yok mu ona göre dön.
         }
 
-        public async Task<IDbContextTransaction> BeginTransaction(IDbContextTransaction transaction)
+        public Task<IDbContextTransaction> BeginTransaction(CancellationToken cancellationToken = default)
         {
-            return await _context.Database.BeginTransaction(transaction); // Eksik
+           return _context.Database.BeginTransactionAsync(cancellationToken);
+        }
+
+        public Task<IExecutionStrategy> CreateExecutionStrategy()
+        {
+           return Task.FromResult(_context.Database.CreateExecutionStrategy());
         }
 
         public async Task DeleteAsync(TEntity entity)
